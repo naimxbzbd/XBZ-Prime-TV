@@ -23,7 +23,7 @@ https://tvsen6.aynaott.com/boishakhitv/index.m3u8
 #EXTINF:-1 tvg-id="satv" tvg-name="SATV" tvg-logo="https://raw.githubusercontent.com/naimxbzbd/XBZ-Prime-TV/main/logos/satv.png" group-title="Entertainment",SATV
 https://tvsen6.aynaott.com/satv/index.m3u8
 
-#EXTINF:-1 tvg-id="mytv" tvg-name="MYTV" tvg-logo="https://raw.githubusercontent.com/naimxbzbd/XBZ-Prime-TV/main/logos/mytv.png" group-title="Entertainment",MYTV
+#EXTINF:-1 tvg-id="mytv" tvg-name="MYTV" tvg-logo="https://i.postimg.cc/XY60wPgT/My-TV.jpg" group-title="Entertainment",MYTV
 https://tvsen6.aynaott.com/mytv/index.m3u8
 
 #EXTINF:-1 tvg-id="bijoytv" tvg-name="Bijoy TV" tvg-logo="https://raw.githubusercontent.com/naimxbzbd/XBZ-Prime-TV/main/logos/bijoy.png" group-title="Entertainment",Bijoy TV
