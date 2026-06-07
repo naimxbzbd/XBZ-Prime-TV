@@ -1,4 +1,8 @@
 #EXTM3U
+
+#EXTINF:-1 tvg-id="rajdhani" tvg-name="FIFA World Cup" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/FIFA_World_Cup_Canada_Mexico_USA_2026_Logo_With_World_Cup_%26_2026_Wordmarks_%28White_2%29.png" group-title="Sports",FiFa World Cup 2026
+https://go.skym3u.top/qcxe.m3u
+
 #EXTINF:-1 tvg-id="rajdhani" tvg-name="Rajdhani TV" tvg-logo="https://i.postimg.cc/HW5LFNtR/Rajshani-TV.jpg" group-title="News",Rajdhani TV
 https://stream.shariarsuvo.com/hls6/rajdhaniweb.m3u8
 
