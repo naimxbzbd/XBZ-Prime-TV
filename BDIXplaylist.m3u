@@ -470,22 +470,22 @@ https://live-dangal.akamaized.net/liveabr/playlist.m3u8
 #EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",Dangal 2
 https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",Goldmines
+#EXTINF:-1 group-title="Movies" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/7b/Goldmines_logo.png",Goldmines
 https://tvsen6.aynaott.com/Goldmines/index.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",Goldmines Bollywood
+#EXTINF:-1 group-title="Movies" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/b/b8/Goldmines_Bollywood.jpg/revision/latest?cb=20220401125831",Goldmines Bollywood
 https://tvsen6.aynaott.com/GoldminesBollywood/index.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",Goldmines Movies
+#EXTINF:-1 group-title="Movies" tvg-logo="https://yt3.googleusercontent.com/d66J-MMZ06-55gkF5maclPGB5f5j1L0SAs3iWnl3lhoswlWrJ67wD2a3mZGkgHgt-W3kMrIT=s900-c-k-c0x00ffffff-no-rj",Goldmines Movies
 https://tvsen6.aynaott.com/GoldminesMovies/index.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",MBC Bollywood
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",MBC Bollywood
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",RDC Movies
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",RDC Movies
 https://janya-rdcmovies.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/230a723f-867d-4fa3-b2d2-a622ba994cd2/main.m3u8
 
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Shemaroo TV
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Shemaroo TV
 https://tvsen6.aynaott.com/ShemarooTV/index.m3u8
 
 #EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Kal
@@ -496,20 +496,20 @@ https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8
 #EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Marathi
 https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
 https://tataplay.slivcdn.com/hls/live/2011670/SonyMaxhd/master.m3u8
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
 https://tataplay.slivcdn.com/hls/live/2011745/SonyMaxSD/master.m3u8
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
 http://kst.moonplex.net:8080/CH1/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max 2
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max 2
 https://tataplay.slivcdn.com/hls/live/2011908/MAX2/master.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/yYmcX2Ds/Sony-SAB-HD.jpg",Sony Pal
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/yYmcX2Ds/Sony-SAB-HD.jpg",Sony Pal
 https://tataplay.slivcdn.com/hls/live/2011741/SonyPalSD/master.m3u8
 
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/yYmcX2Ds/Sony-SAB-HD.jpg",Sony Sab
+#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/yYmcX2Ds/Sony-SAB-HD.jpg",Sony Sab
 https://tataplay.slivcdn.com/hls/live/2011749/SABHD/master.m3u8
 
 #EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/x1tfkwJb/Sony-TV.jpg",Sony TV
