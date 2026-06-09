@@ -454,19 +454,13 @@ https://tvsen6.aynaott.com/GoldminesMovies/index.m3u8
 
 #EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/J4n7YN2D/Colors.jpg",MBC Bollywood
 
-#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",RDC Movies
+#EXTINF:-1 group-title="Movies" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9qZURQ_T0xtTL2rVvqNFEr6mzoOrVbguBHA&s",RDC Movies
 https://janya-rdcmovies.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/230a723f-867d-4fa3-b2d2-a622ba994cd2/main.m3u8
 
-
-#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Shemaroo TV
-https://tvsen6.aynaott.com/ShemarooTV/index.m3u8
-
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Kal
-https://spt-sonykal-1-us.lg.wurl.tv/playlist.m3u8
+  
 
 
-
-#EXTINF:-1 group-title="India" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Marathi
+#EXTINF:-1 group-title="India" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/f/f8/Sony-marathi-in.png/revision/latest?cb=20210924122409",Sony Marathi
 https://tataplay.slivcdn.com/hls/live/2011740/SonyMarathi/master.m3u8
 
 #EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
@@ -477,7 +471,7 @@ https://edge2.roarzone.net:8447/roarzone/edge3/sony_max/index.m3u8?token=35209da
 #EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max HD
 https://sm-monirul.top/toffee/play/sony_max_hd.m3u8
 
-#EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/T3yTcTHZ/Sony-Max-HD.jpg",Sony Max 2
+#EXTINF:-1 group-title="Movies" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/a/ae/Sony_Max_2.png",Sony Max 2
 https://edge2.roarzone.net:8447/roarzone/edge3/sonymax_2/index.m3u8?token=6c27e0d5cff1cbf3e496ee42e9d2b244122a5e36-7787b753c792f2d4c33a0000daac236b-1781007330-1780996530
 
 #EXTINF:-1 group-title="Movies" tvg-logo="https://i.postimg.cc/yYmcX2Ds/Sony-SAB-HD.jpg",Sony Pal
