@@ -9,8 +9,11 @@ https://a62dad94.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdX
 #EXTINF:-1 tvg-id="fifaworldcup" tvg-name="FIFA World Cup" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/FIFA_World_Cup_Canada_Mexico_USA_2026_Logo_With_World_Cup_%26_2026_Wordmarks_%28White_2%29.png" group-title="Football World Cup 2026",RealMadrid TV
 https://rmtv.akamaized.net/hls/live/2043154/rmtv-en-web/bitrate_3.m3u8
 
+#EXTINF:-1 tvg-id="fifaworldcup" tvg-name="FIFA World Cup" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/FIFA_World_Cup_Canada_Mexico_USA_2026_Logo_With_World_Cup_%26_2026_Wordmarks_%28White_2%29.png" group-title="Football World Cup 2026",Football World Cup 2026
+https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 
-#EXTINF:-1 tvg-id="fifaworldcup" tvg-name="FIFA World Cup" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/FIFA_World_Cup_Canada_Mexico_USA_2026_Logo_With_World_Cup_%26_2026_Wordmarks_%28White_2%29.png" group-title="Football World Cup 2026",
+
+#EXTINF:-1 tvg-id="fifaworldcup" tvg-name="FIFA World Cup" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/3/3b/FIFA_World_Cup_Canada_Mexico_USA_2026_Logo_With_World_Cup_%26_2026_Wordmarks_%28White_2%29.png" group-title="Football World Cup 2026",Football World Cup 2026
  https://rmtv.akamaized.net/hls/live/2043153/rmtv-es-web/bitrate_3.m3u8
 
 
