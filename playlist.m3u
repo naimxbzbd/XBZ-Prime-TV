@@ -5,8 +5,16 @@
 #EXTENC: UTF-8
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://lh3.googleusercontent.com/mGk98--Wei7SRISqyPRmtGVWYIt9CcyPaQM_8JctgErASaFp91UgCHq_wubRk0SPdtft8gbkRvm1iw5NwcGYj5ftVMIFXhR4EBdY=h200", Toffee Live
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://lh3.googleusercontent.com/mGk98--Wei7SRISqyPRmtGVWYIt9CcyPaQM_8JctgErASaFp91UgCHq_wubRk0SPdtft8gbkRvm1iw5NwcGYj5ftVMIFXhR4EBdY=h200", Bioscope +
 https://d1kep4defqj6r1.cloudfront.net/out/v1/4e21d5a122c549289dd6feab259266e8/index_1.m3u8
+
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/1/18/IScreen_logo.png/revision/latest?cb=20231207080112", i Screen
+https://tahmidx.cinemoja2.workers.dev/live/FIFA-2026-4/0/master_2000.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnuwajhnt5zlu58nLdYxFOq88vkb23sCR-cdXhhQXKwg&s=10", Somoy TV
+https://s1.itcnbd.live/1-somoy-tv/tracks-v1a1/mono.m3u8?nocache=1782580870104
+
 
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/43/Toffee_logo.png", Toffee Live
 https://sm-monirul.top/tof/live/toffee6/index.m3u8
@@ -23,8 +31,6 @@ https://prod-cdn01-live.toffeelive.com/live/FIFA-2026-4/0/master_2000.m3u8?hdntl
 https://billowing-dawn-ee85.opkawsar156.workers.dev/?url=https%3A%2F%2Fprod-cdn01-live.toffeelive.com%2Flive%2FFIFA-2026-2%2F0%2Fmaster_3000.m3u8
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/1/18/IScreen_logo.png/revision/latest?cb=20231207080112", i Screen
-https://tahmidx.cinemoja2.workers.dev/live/FIFA-2026-4/0/master_2000.m3u8
 
 
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/43/Toffee_logo.png", Toffee Live
