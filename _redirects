@@ -1,0 +1,13 @@
+# XBZ Prime TV - Netlify Redirect Rules
+# SPA Fallback - All routes to index.html
+/*    /index.html   200
+
+# Assets
+/assets/*    /assets/:splat    200
+/css/*       /css/:splat       200
+/js/*        /js/:splat        200
+
+# Manifest and Service Worker
+/manifest.json    /manifest.json    200
+/sw.js           /sw.js            200
+/favicon.png     /assets/favicon.png    200
