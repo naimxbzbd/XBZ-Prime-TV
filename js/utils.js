@@ -12,38 +12,30 @@ const Utils = {
 
     /**
      * Query selector shorthand
-     * @param {string} selector - CSS selector
-     * @param {Element} parent - Parent element (default: document)
-     * @returns {Element|null}
      */
     $(selector, parent = document) {
         try {
             return parent.querySelector(selector);
         } catch (error) {
-            console.error(`[UTILS] Query selector error for "${selector}":`, error);
+            console.error('[UTILS] Query selector error for "' + selector + '":', error);
             return null;
         }
     },
 
     /**
      * Query selector all shorthand
-     * @param {string} selector - CSS selector
-     * @param {Element} parent - Parent element (default: document)
-     * @returns {NodeList}
      */
     $$(selector, parent = document) {
         try {
             return parent.querySelectorAll(selector);
         } catch (error) {
-            console.error(`[UTILS] Query selector all error for "${selector}":`, error);
-            return document.createDocumentFragment().childNodes;
+            console.error('[UTILS] Query selector all error for "' + selector + '":', error);
+            return [];
         }
     },
 
     /**
      * Get element by ID with caching
-     * @param {string} id - Element ID
-     * @returns {Element|null}
      */
     getById(id) {
         if (!STATE.dom.elements[id]) {
@@ -54,16 +46,11 @@ const Utils = {
 
     /**
      * Create element with attributes and children
-     * @param {string} tag - HTML tag
-     * @param {Object} attributes - Element attributes
-     * @param {string|Element|Array} children - Child content
-     * @returns {Element}
      */
     createElement(tag, attributes = {}, children = null) {
         try {
             const element = document.createElement(tag);
             
-            // Set attributes
             Object.entries(attributes).forEach(([key, value]) => {
                 if (key === 'className') {
                     element.className = value;
@@ -84,7 +71,6 @@ const Utils = {
                 }
             });
             
-            // Append children
             if (children !== null && children !== undefined) {
                 if (Array.isArray(children)) {
                     children.forEach(child => {
@@ -103,9 +89,7 @@ const Utils = {
     },
 
     /**
-     * Append child to parent (handles strings, elements)
-     * @param {Element} parent - Parent element
-     * @param {string|Element} child - Child to append
+     * Append child to parent
      */
     appendElement(parent, child) {
         try {
@@ -123,7 +107,6 @@ const Utils = {
 
     /**
      * Remove all children from an element
-     * @param {Element} element - Parent element
      */
     emptyElement(element) {
         try {
@@ -137,9 +120,6 @@ const Utils = {
 
     /**
      * Toggle class on element
-     * @param {Element} element - Target element
-     * @param {string} className - Class to toggle
-     * @param {boolean} force - Force add/remove
      */
     toggleClass(element, className, force) {
         try {
@@ -159,19 +139,15 @@ const Utils = {
 
     /**
      * Generate a unique ID
-     * @param {string} prefix - Optional prefix
-     * @returns {string} Unique ID
      */
     generateId(prefix = 'xbz') {
         const timestamp = Date.now().toString(36);
         const random = Math.random().toString(36).substring(2, 9);
-        return `${prefix}-${timestamp}-${random}`;
+        return prefix + '-' + timestamp + '-' + random;
     },
 
     /**
      * Slugify a string for URLs/IDs
-     * @param {string} text - Input text
-     * @returns {string} Slugified text
      */
     slugify(text) {
         try {
@@ -192,9 +168,6 @@ const Utils = {
 
     /**
      * Truncate text with ellipsis
-     * @param {string} text - Input text
-     * @param {number} maxLength - Max length
-     * @returns {string} Truncated text
      */
     truncate(text, maxLength = 50) {
         try {
@@ -209,8 +182,6 @@ const Utils = {
 
     /**
      * Capitalize first letter
-     * @param {string} text - Input text
-     * @returns {string} Capitalized text
      */
     capitalize(text) {
         try {
@@ -224,8 +195,6 @@ const Utils = {
 
     /**
      * Escape HTML entities
-     * @param {string} text - Input text
-     * @returns {string} Escaped text
      */
     escapeHTML(text) {
         try {
@@ -240,8 +209,6 @@ const Utils = {
 
     /**
      * Strip HTML tags
-     * @param {string} html - HTML string
-     * @returns {string} Plain text
      */
     stripHTML(html) {
         try {
@@ -260,8 +227,6 @@ const Utils = {
 
     /**
      * Format date to relative time
-     * @param {Date|string} date - Date to format
-     * @returns {string} Relative time string
      */
     timeAgo(date) {
         try {
@@ -274,10 +239,10 @@ const Utils = {
             const diffDay = Math.floor(diffHr / 24);
             
             if (diffSec < 5) return 'just now';
-            if (diffSec < 60) return `${diffSec}s ago`;
-            if (diffMin < 60) return `${diffMin}m ago`;
-            if (diffHr < 24) return `${diffHr}h ago`;
-            if (diffDay < 7) return `${diffDay}d ago`;
+            if (diffSec < 60) return diffSec + 's ago';
+            if (diffMin < 60) return diffMin + 'm ago';
+            if (diffHr < 24) return diffHr + 'h ago';
+            if (diffDay < 7) return diffDay + 'd ago';
             
             return past.toLocaleDateString();
         } catch (error) {
@@ -288,8 +253,6 @@ const Utils = {
 
     /**
      * Format date for matches
-     * @param {Date|string} date - Match date
-     * @returns {string} Formatted date
      */
     formatMatchDate(date) {
         try {
@@ -310,8 +273,6 @@ const Utils = {
 
     /**
      * Format match time only
-     * @param {Date|string} date - Match date
-     * @returns {string} Time string
      */
     formatMatchTime(date) {
         try {
@@ -329,8 +290,6 @@ const Utils = {
 
     /**
      * Format number with commas
-     * @param {number} num - Number to format
-     * @returns {string} Formatted number
      */
     formatNumber(num) {
         try {
@@ -343,8 +302,6 @@ const Utils = {
 
     /**
      * Format duration from seconds
-     * @param {number} seconds - Duration in seconds
-     * @returns {string} Formatted duration (mm:ss or hh:mm:ss)
      */
     formatDuration(seconds) {
         try {
@@ -354,12 +311,12 @@ const Utils = {
             const mins = Math.floor((seconds % 3600) / 60);
             const secs = Math.floor(seconds % 60);
             
-            const pad = (n) => String(n).padStart(2, '0');
+            const pad = function(n) { return String(n).padStart(2, '0'); };
             
             if (hrs > 0) {
-                return `${pad(hrs)}:${pad(mins)}:${pad(secs)}`;
+                return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
             }
-            return `${pad(mins)}:${pad(secs)}`;
+            return pad(mins) + ':' + pad(secs);
         } catch (error) {
             console.error('[UTILS] Error formatting duration:', error);
             return '00:00';
@@ -368,15 +325,13 @@ const Utils = {
 
     /**
      * Format file size
-     * @param {number} bytes - Size in bytes
-     * @returns {string} Formatted size
      */
     formatFileSize(bytes) {
         try {
             if (bytes === 0) return '0 B';
             const sizes = ['B', 'KB', 'MB', 'GB', 'TB'];
             const i = Math.floor(Math.log(bytes) / Math.log(1024));
-            return `${(bytes / Math.pow(1024, i)).toFixed(1)} ${sizes[i]}`;
+            return (bytes / Math.pow(1024, i)).toFixed(1) + ' ' + sizes[i];
         } catch (error) {
             console.error('[UTILS] Error formatting file size:', error);
             return '0 B';
@@ -389,8 +344,6 @@ const Utils = {
 
     /**
      * Check if a string is a valid URL
-     * @param {string} url - URL to validate
-     * @returns {boolean}
      */
     isValidURL(url) {
         try {
@@ -403,8 +356,6 @@ const Utils = {
 
     /**
      * Extract domain from URL
-     * @param {string} url - Full URL
-     * @returns {string} Domain name
      */
     getDomain(url) {
         try {
@@ -417,8 +368,6 @@ const Utils = {
 
     /**
      * Get file extension from URL or filename
-     * @param {string} url - URL or filename
-     * @returns {string} File extension (lowercase)
      */
     getFileExtension(url) {
         try {
@@ -433,8 +382,6 @@ const Utils = {
 
     /**
      * Check if URL is an HLS stream
-     * @param {string} url - Stream URL
-     * @returns {boolean}
      */
     isHLSUrl(url) {
         const extension = Utils.getFileExtension(url);
@@ -443,8 +390,6 @@ const Utils = {
 
     /**
      * Check if URL is a DASH stream
-     * @param {string} url - Stream URL
-     * @returns {boolean}
      */
     isDashUrl(url) {
         const extension = Utils.getFileExtension(url);
@@ -453,8 +398,6 @@ const Utils = {
 
     /**
      * Check if URL is an iframe embed
-     * @param {string} content - URL or HTML
-     * @returns {boolean}
      */
     isEmbedCode(content) {
         return /<iframe\s/i.test(content) || /<embed\s/i.test(content);
@@ -462,8 +405,6 @@ const Utils = {
 
     /**
      * Extract iframe src from embed code
-     * @param {string} html - Embed HTML
-     * @returns {string|null} Iframe src URL
      */
     extractIframeSrc(html) {
         try {
@@ -481,8 +422,6 @@ const Utils = {
 
     /**
      * Parse M3U playlist content
-     * @param {string} content - M3U file content
-     * @returns {Array} Array of channel objects
      */
     parseM3U(content) {
         try {
@@ -493,10 +432,8 @@ const Utils = {
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
                 
-                // Skip empty lines and comments
                 if (!line || line.startsWith('#EXTM3U')) continue;
                 
-                // Parse EXTINF line
                 if (line.startsWith('#EXTINF:')) {
                     currentChannel = {
                         id: Utils.generateId('ch'),
@@ -509,37 +446,25 @@ const Utils = {
                         attributes: {},
                     };
                     
-                    // Extract duration and attributes
                     const infoMatch = line.match(/#EXTINF:\s*(-?\d+)\s*(.*)/i);
                     if (infoMatch) {
                         const attrString = infoMatch[2] || '';
                         
-                        // Extract tvg-name
                         const nameMatch = attrString.match(/tvg-name="([^"]*)"/i);
-                        if (nameMatch) {
-                            currentChannel.name = nameMatch[1].trim();
-                        }
+                        if (nameMatch) currentChannel.name = nameMatch[1].trim();
                         
-                        // Extract tvg-logo
                         const logoMatch = attrString.match(/tvg-logo="([^"]*)"/i);
-                        if (logoMatch) {
-                            currentChannel.logo = logoMatch[1].trim();
-                        }
+                        if (logoMatch) currentChannel.logo = logoMatch[1].trim();
                         
-                        // Extract group-title
                         const groupMatch = attrString.match(/group-title="([^"]*)"/i);
                         if (groupMatch) {
                             currentChannel.group = groupMatch[1].trim();
                             currentChannel.category = currentChannel.group;
                         }
                         
-                        // Extract tvg-id
                         const idMatch = attrString.match(/tvg-id="([^"]*)"/i);
-                        if (idMatch) {
-                            currentChannel.tvgId = idMatch[1].trim();
-                        }
+                        if (idMatch) currentChannel.tvgId = idMatch[1].trim();
                         
-                        // If no name from tvg-name, use the rest after comma
                         if (!currentChannel.name) {
                             const commaIndex = attrString.lastIndexOf(',');
                             if (commaIndex !== -1) {
@@ -549,18 +474,11 @@ const Utils = {
                             }
                         }
                     }
-                }
-                // Parse URL line
-                else if (currentChannel && !line.startsWith('#')) {
+                } else if (currentChannel && !line.startsWith('#')) {
                     if (Utils.isValidURL(line)) {
                         currentChannel.url = line;
-                        
-                        // Detect quality from URL or name
                         currentChannel.quality = Utils.detectQuality(currentChannel.name + ' ' + line);
-                        
-                        // Detect if it's live
                         currentChannel.isLive = Utils.detectIsLive(currentChannel.name);
-                        
                         channels.push({ ...currentChannel });
                     }
                     currentChannel = null;
@@ -576,8 +494,6 @@ const Utils = {
 
     /**
      * Remove duplicate channels from array
-     * @param {Array} channels - Channel array
-     * @returns {Array} Deduplicated channels
      */
     removeDuplicateChannels(channels) {
         try {
@@ -601,8 +517,6 @@ const Utils = {
 
     /**
      * Detect stream quality from text
-     * @param {string} text - Text to analyze
-     * @returns {string} Quality label
      */
     detectQuality(text) {
         try {
@@ -613,7 +527,7 @@ const Utils = {
                 if (pattern.test(lower)) return quality;
             }
             
-            return 'HD'; // Default
+            return 'HD';
         } catch (error) {
             console.error('[UTILS] Error detecting quality:', error);
             return 'HD';
@@ -622,8 +536,6 @@ const Utils = {
 
     /**
      * Detect if channel is live from name
-     * @param {string} name - Channel name
-     * @returns {boolean}
      */
     detectIsLive(name) {
         try {
@@ -636,8 +548,6 @@ const Utils = {
 
     /**
      * Extract categories from channels
-     * @param {Array} channels - Channel array
-     * @returns {Array} Unique categories
      */
     extractCategories(channels) {
         try {
@@ -657,8 +567,6 @@ const Utils = {
 
     /**
      * Get category emoji
-     * @param {string} category - Category name
-     * @returns {string} Emoji
      */
     getCategoryEmoji(category) {
         try {
@@ -672,7 +580,7 @@ const Utils = {
             return emojis.default;
         } catch (error) {
             console.error('[UTILS] Error getting category emoji:', error);
-            return '📺';
+            return 'TV';
         }
     },
 
@@ -682,8 +590,6 @@ const Utils = {
 
     /**
      * Get league emoji
-     * @param {string} league - League name
-     * @returns {string} Emoji
      */
     getLeagueEmoji(league) {
         try {
@@ -691,40 +597,37 @@ const Utils = {
             return emojis[league] || emojis.default;
         } catch (error) {
             console.error('[UTILS] Error getting league emoji:', error);
-            return '⚽';
+            return 'INT';
         }
     },
 
     /**
      * Find matching channel for a match
-     * @param {Object} match - Match object
-     * @param {Array} channels - Available channels
-     * @returns {Object|null} Matching channel
      */
     findMatchChannel(match, channels) {
         try {
             if (!match || !channels.length) return null;
             
             const keywords = CONFIG.FOOTBALL.CHANNEL_MATCH_KEYWORDS;
-            const searchText = `${match.competition?.name || ''} ${match.homeTeam?.name || ''} ${match.awayTeam?.name || ''}`.toLowerCase();
+            const searchText = (match.competition?.name || '') + ' ' + 
+                               (match.homeTeam?.name || '') + ' ' + 
+                               (match.awayTeam?.name || '');
+            const searchLower = searchText.toLowerCase();
             
-            // Score each channel based on keyword matches
             const scored = channels.map(channel => {
-                const channelText = `${channel.name} ${channel.category} ${channel.group || ''}`.toLowerCase();
+                const channelText = (channel.name + ' ' + channel.category + ' ' + (channel.group || '')).toLowerCase();
                 let score = 0;
                 
                 keywords.forEach(keyword => {
                     if (channelText.includes(keyword)) score += 1;
-                    if (searchText.includes(keyword)) score += 1;
+                    if (searchLower.includes(keyword)) score += 1;
                 });
                 
                 return { channel, score };
             });
             
-            // Sort by score descending
-            scored.sort((a, b) => b.score - a.score);
+            scored.sort(function(a, b) { return b.score - a.score; });
             
-            // Return best match if score > 0, otherwise first channel
             if (scored.length > 0 && scored[0].score > 0) {
                 return scored[0].channel;
             }
@@ -742,14 +645,11 @@ const Utils = {
 
     /**
      * Debounce function
-     * @param {Function} func - Function to debounce
-     * @param {number} wait - Wait time in ms
-     * @returns {Function} Debounced function
      */
     debounce(func, wait = 300) {
         let timeout;
         return function executedFunction(...args) {
-            const later = () => {
+            const later = function() {
                 clearTimeout(timeout);
                 func(...args);
             };
@@ -760,9 +660,6 @@ const Utils = {
 
     /**
      * Throttle function
-     * @param {Function} func - Function to throttle
-     * @param {number} limit - Limit in ms
-     * @returns {Function} Throttled function
      */
     throttle(func, limit = 100) {
         let inThrottle;
@@ -770,26 +667,10 @@ const Utils = {
             if (!inThrottle) {
                 func(...args);
                 inThrottle = true;
-                setTimeout(() => {
+                setTimeout(function() {
                     inThrottle = false;
                 }, limit);
             }
-        };
-    },
-
-    /**
-     * RAF throttle for animations
-     * @param {Function} func - Function to throttle
-     * @returns {Function} RAF-throttled function
-     */
-    rafThrottle(func) {
-        let rafId = null;
-        return function executedFunction(...args) {
-            if (rafId) return;
-            rafId = requestAnimationFrame(() => {
-                func(...args);
-                rafId = null;
-            });
         };
     },
 
@@ -799,9 +680,6 @@ const Utils = {
 
     /**
      * Safe localStorage get with expiry check
-     * @param {string} key - Storage key
-     * @param {number} maxAge - Max age in ms
-     * @returns {*} Stored value or null
      */
     getFromStorage(key, maxAge = null) {
         try {
@@ -810,7 +688,6 @@ const Utils = {
             
             const parsed = JSON.parse(item);
             
-            // Check expiry if maxAge specified
             if (maxAge && parsed._timestamp) {
                 const age = Date.now() - parsed._timestamp;
                 if (age > maxAge) {
@@ -821,15 +698,13 @@ const Utils = {
             
             return parsed._data !== undefined ? parsed._data : parsed;
         } catch (error) {
-            console.error(`[UTILS] Error reading from storage "${key}":`, error);
+            console.error('[UTILS] Error reading from storage "' + key + '":', error);
             return null;
         }
     },
 
     /**
      * Safe localStorage set with timestamp
-     * @param {string} key - Storage key
-     * @param {*} data - Data to store
      */
     setToStorage(key, data) {
         try {
@@ -839,8 +714,7 @@ const Utils = {
             };
             localStorage.setItem(key, JSON.stringify(wrapped));
         } catch (error) {
-            console.error(`[UTILS] Error writing to storage "${key}":`, error);
-            // If quota exceeded, clear old items
+            console.error('[UTILS] Error writing to storage "' + key + '":', error);
             if (error.name === 'QuotaExceededError') {
                 Utils.clearOldStorage();
                 try {
@@ -872,13 +746,12 @@ const Utils = {
 
     /**
      * Remove item from storage
-     * @param {string} key - Storage key
      */
     removeFromStorage(key) {
         try {
             localStorage.removeItem(key);
         } catch (error) {
-            console.error(`[UTILS] Error removing from storage "${key}":`, error);
+            console.error('[UTILS] Error removing from storage "' + key + '":', error);
         }
     },
 
@@ -887,76 +760,81 @@ const Utils = {
        ========================================== */
 
     /**
-     * Fetch with timeout and retry
-     * @param {string} url - URL to fetch
-     * @param {Object} options - Fetch options
-     * @param {number} timeout - Timeout in ms
-     * @param {number} retries - Number of retries
-     * @returns {Promise<Response>}
+     * Fetch with timeout, retry and CORS proxy support
      */
-    async fetchWithTimeout(url, options = {}, timeout = 10000, retries = 2) {
+    async fetchWithTimeout(url, options = {}, timeout = 15000, retries = 2) {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), timeout);
+        const timeoutId = setTimeout(function() { controller.abort(); }, timeout);
         
         const fetchOptions = {
             ...options,
             signal: controller.signal,
+            mode: 'cors',
+            credentials: 'omit',
         };
+
+        let fetchUrl = url;
+        if (CONFIG.CORS_PROXY && !CONFIG.IS_LOCAL) {
+            if (url.includes('raw.githubusercontent.com') || 
+                url.includes('api.football-data.org')) {
+                fetchUrl = CONFIG.CORS_PROXY + encodeURIComponent(url);
+                console.log('[UTILS] Using CORS proxy for:', url.substring(0, 50) + '...');
+            }
+        }
         
         for (let attempt = 0; attempt <= retries; attempt++) {
             try {
-                const response = await fetch(url, fetchOptions);
+                const response = await fetch(fetchUrl, fetchOptions);
                 clearTimeout(timeoutId);
                 
                 if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    throw new Error('HTTP ' + response.status + ': ' + response.statusText);
                 }
                 
                 return response;
             } catch (error) {
                 clearTimeout(timeoutId);
                 
+                if (fetchUrl !== url && attempt === 0) {
+                    console.log('[UTILS] Proxy failed, trying direct URL...');
+                    fetchUrl = url;
+                    attempt--;
+                    continue;
+                }
+                
                 if (attempt === retries) {
                     throw error;
                 }
                 
-                // Wait before retry
                 const delay = CONFIG.RETRY_DELAYS[attempt] || 2000;
                 await Utils.sleep(delay);
-                
-                console.log(`[UTILS] Retry attempt ${attempt + 1}/${retries} for ${url}`);
+                console.log('[UTILS] Retry attempt ' + (attempt + 1) + '/' + retries + ' for ' + url.substring(0, 50) + '...');
             }
         }
     },
 
     /**
      * Fetch JSON from URL
-     * @param {string} url - URL to fetch
-     * @param {Object} options - Fetch options
-     * @returns {Promise<Object>}
      */
     async fetchJSON(url, options = {}) {
         try {
             const response = await Utils.fetchWithTimeout(url, options);
             return await response.json();
         } catch (error) {
-            console.error(`[UTILS] Error fetching JSON from "${url}":`, error);
+            console.error('[UTILS] Error fetching JSON from "' + url + '":', error);
             throw error;
         }
     },
 
     /**
      * Fetch text from URL
-     * @param {string} url - URL to fetch
-     * @param {Object} options - Fetch options
-     * @returns {Promise<string>}
      */
     async fetchText(url, options = {}) {
         try {
             const response = await Utils.fetchWithTimeout(url, options);
             return await response.text();
         } catch (error) {
-            console.error(`[UTILS] Error fetching text from "${url}":`, error);
+            console.error('[UTILS] Error fetching text from "' + url + '":', error);
             throw error;
         }
     },
@@ -967,19 +845,13 @@ const Utils = {
 
     /**
      * Sleep/delay promise
-     * @param {number} ms - Milliseconds to sleep
-     * @returns {Promise}
      */
     sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
+        return new Promise(function(resolve) { return setTimeout(resolve, ms); });
     },
 
     /**
      * Retry async function with exponential backoff
-     * @param {Function} fn - Async function to retry
-     * @param {number} maxRetries - Max retry attempts
-     * @param {Array} delays - Array of delay times
-     * @returns {Promise}
      */
     async retryWithBackoff(fn, maxRetries = 3, delays = null) {
         const retryDelays = delays || CONFIG.RETRY_DELAYS;
@@ -990,37 +862,10 @@ const Utils = {
             } catch (error) {
                 if (attempt === maxRetries) throw error;
                 const delay = retryDelays[attempt] || 2000;
-                console.log(`[UTILS] Retry ${attempt + 1}/${maxRetries} after ${delay}ms`);
+                console.log('[UTILS] Retry ' + (attempt + 1) + '/' + maxRetries + ' after ' + delay + 'ms');
                 await Utils.sleep(delay);
             }
         }
-    },
-
-    /**
-     * Run promises with concurrency limit
-     * @param {Array<Function>} tasks - Array of async functions
-     * @param {number} concurrency - Max concurrent
-     * @returns {Promise<Array>}
-     */
-    async runWithConcurrency(tasks, concurrency = 3) {
-        const results = [];
-        const executing = new Set();
-        
-        for (const task of tasks) {
-            const promise = task().then(result => {
-                executing.delete(promise);
-                return result;
-            });
-            
-            executing.add(promise);
-            results.push(promise);
-            
-            if (executing.size >= concurrency) {
-                await Promise.race(executing);
-            }
-        }
-        
-        return Promise.all(results);
     },
 
     /* ==========================================
@@ -1028,39 +873,7 @@ const Utils = {
        ========================================== */
 
     /**
-     * Add event listener with cleanup tracking
-     * @param {Element} element - Target element
-     * @param {string} event - Event name
-     * @param {Function} handler - Event handler
-     * @param {Object} options - Event options
-     * @returns {Function} Remove listener function
-     */
-    addEventListener(element, event, handler, options = {}) {
-        element.addEventListener(event, handler, options);
-        return () => element.removeEventListener(event, handler, options);
-    },
-
-    /**
-     * Delegate event to parent
-     * @param {Element} parent - Parent element
-     * @param {string} eventType - Event type
-     * @param {string} selector - Child selector
-     * @param {Function} handler - Event handler
-     */
-    delegateEvent(parent, eventType, selector, handler) {
-        parent.addEventListener(eventType, (event) => {
-            const target = event.target.closest(selector);
-            if (target && parent.contains(target)) {
-                handler.call(target, event, target);
-            }
-        });
-    },
-
-    /**
      * Trigger custom event
-     * @param {Element} element - Target element
-     * @param {string} eventName - Event name
-     * @param {*} detail - Event detail
      */
     triggerEvent(element, eventName, detail = {}) {
         const event = new CustomEvent(eventName, {
@@ -1076,22 +889,7 @@ const Utils = {
        ========================================== */
 
     /**
-     * Get current breakpoint
-     * @returns {string} Breakpoint name
-     */
-    getBreakpoint() {
-        const width = window.innerWidth;
-        if (width < CONFIG.BREAKPOINTS.SM) return 'xs';
-        if (width < CONFIG.BREAKPOINTS.MD) return 'sm';
-        if (width < CONFIG.BREAKPOINTS.LG) return 'md';
-        if (width < CONFIG.BREAKPOINTS.XL) return 'lg';
-        if (width < CONFIG.BREAKPOINTS.XXL) return 'xl';
-        return 'xxl';
-    },
-
-    /**
      * Check if device is mobile
-     * @returns {boolean}
      */
     isMobile() {
         return window.innerWidth < CONFIG.BREAKPOINTS.LG;
@@ -1099,7 +897,6 @@ const Utils = {
 
     /**
      * Check if device is tablet
-     * @returns {boolean}
      */
     isTablet() {
         return window.innerWidth >= CONFIG.BREAKPOINTS.MD && window.innerWidth < CONFIG.BREAKPOINTS.LG;
@@ -1107,55 +904,9 @@ const Utils = {
 
     /**
      * Check if device is touch-enabled
-     * @returns {boolean}
      */
     isTouchDevice() {
         return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-    },
-
-    /**
-     * Check if browser supports HLS natively
-     * @returns {boolean}
-     */
-    supportsNativeHLS() {
-        const video = document.createElement('video');
-        return video.canPlayType('application/vnd.apple.mpegurl') !== '';
-    },
-
-    /**
-     * Check if browser supports MSE
-     * @returns {boolean}
-     */
-    supportsMSE() {
-        return 'MediaSource' in window && !!window.MediaSource;
-    },
-
-    /* ==========================================
-       LOGGING UTILITIES
-       ========================================== */
-
-    /**
-     * Conditional debug logging
-     * @param {string} level - Log level
-     * @param {string} message - Log message
-     * @param {*} data - Optional data
-     */
-    log(level, message, data = null) {
-        if (!CONFIG.DEBUG.ENABLED) return;
-        
-        const prefix = CONFIG.DEBUG.LOG_PREFIX;
-        const levels = { debug: 0, info: 1, warn: 2, error: 3 };
-        const configLevel = levels[CONFIG.DEBUG.LOG_LEVEL] || 1;
-        const msgLevel = levels[level] || 1;
-        
-        if (msgLevel >= configLevel) {
-            const logFn = console[level] || console.log;
-            if (data) {
-                logFn(`${prefix} ${message}`, data);
-            } else {
-                logFn(`${prefix} ${message}`);
-            }
-        }
     },
 
     /* ==========================================
@@ -1164,8 +915,6 @@ const Utils = {
 
     /**
      * Copy text to clipboard
-     * @param {string} text - Text to copy
-     * @returns {Promise<boolean>}
      */
     async copyToClipboard(text) {
         try {
@@ -1174,7 +923,6 @@ const Utils = {
                 return true;
             }
             
-            // Fallback
             const textarea = document.createElement('textarea');
             textarea.value = text;
             textarea.style.position = 'fixed';
@@ -1192,8 +940,6 @@ const Utils = {
 
     /**
      * Get random item from array
-     * @param {Array} arr - Input array
-     * @returns {*} Random item
      */
     getRandomItem(arr) {
         return arr[Math.floor(Math.random() * arr.length)];
@@ -1201,68 +947,20 @@ const Utils = {
 
     /**
      * Shuffle array (Fisher-Yates)
-     * @param {Array} arr - Input array
-     * @returns {Array} Shuffled array
      */
     shuffleArray(arr) {
         const shuffled = [...arr];
         for (let i = shuffled.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            const temp = shuffled[i];
+            shuffled[i] = shuffled[j];
+            shuffled[j] = temp;
         }
         return shuffled;
     },
 
     /**
-     * Group array by key
-     * @param {Array} arr - Input array
-     * @param {string} key - Group by this key
-     * @returns {Object} Grouped object
-     */
-    groupBy(arr, key) {
-        return arr.reduce((groups, item) => {
-            const value = item[key] || 'unknown';
-            if (!groups[value]) groups[value] = [];
-            groups[value].push(item);
-            return groups;
-        }, {});
-    },
-
-    /**
-     * Chunk array into smaller arrays
-     * @param {Array} arr - Input array
-     * @param {number} size - Chunk size
-     * @returns {Array<Array>}
-     */
-    chunkArray(arr, size) {
-        const chunks = [];
-        for (let i = 0; i < arr.length; i += size) {
-            chunks.push(arr.slice(i, i + size));
-        }
-        return chunks;
-    },
-
-    /**
-     * Measure performance of a function
-     * @param {string} label - Performance label
-     * @param {Function} fn - Function to measure
-     * @returns {*} Function result
-     */
-    measurePerformance(label, fn) {
-        if (!CONFIG.DEBUG.SHOW_PERFORMANCE_MARKS) return fn();
-        
-        const start = performance.now();
-        const result = fn();
-        const duration = performance.now() - start;
-        console.log(`[PERF] ${label}: ${duration.toFixed(2)}ms`);
-        return result;
-    },
-
-    /**
      * Safe JSON parse
-     * @param {string} json - JSON string
-     * @param {*} fallback - Fallback value
-     * @returns {*}
      */
     safeJSONParse(json, fallback = null) {
         try {
@@ -1275,8 +973,6 @@ const Utils = {
 
     /**
      * Check if value is empty
-     * @param {*} value - Value to check
-     * @returns {boolean}
      */
     isEmpty(value) {
         if (value === null || value === undefined) return true;
@@ -1288,8 +984,6 @@ const Utils = {
 
     /**
      * Deep clone an object
-     * @param {*} obj - Object to clone
-     * @returns {*} Cloned object
      */
     deepClone(obj) {
         try {
