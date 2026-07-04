@@ -120,6 +120,10 @@ const PlayerModule = {
                 player.on('error', () => {
                     const error = player.error();
                     console.error('[PLAYER] Video.js error:', error);
+                    if (error) {
+                        console.error('[PLAYER] Error code:', error.code);
+                        console.error('[PLAYER] Error message:', error.message);
+                    }
                 });
 
             } catch (error) {
@@ -317,6 +321,8 @@ const PlayerModule = {
             throw new Error('Player not initialized');
         }
 
+        console.log('[PLAYER] Stream URL:', url);
+
         // Reset player
         player.reset();
         
@@ -396,7 +402,10 @@ const PlayerModule = {
                     console.log('[PLAYER] Using native HLS support');
                     player.src({ src: url, type: 'application/x-mpegurl' });
                     player.one('loadedmetadata', () => resolve());
-                    player.one('error', () => reject(player.error()));
+                    player.one('error', (e) => {
+                        console.error('[PLAYER] Native HLS error:', e);
+                        reject(player.error());
+                    });
                     return;
                 }
 
@@ -427,6 +436,8 @@ const PlayerModule = {
 
                 hls.on(Hls.Events.ERROR, (event, data) => {
                     console.error('[PLAYER] HLS error:', data);
+                    console.error('[PLAYER] HLS error type:', data.type);
+                    console.error('[PLAYER] HLS error details:', data.details);
                     
                     if (data.fatal) {
                         switch (data.type) {
@@ -458,6 +469,7 @@ const PlayerModule = {
                 }, CONFIG.PLAYER.HLS_OPTIONS.manifestLoadingTimeOut);
 
             } catch (error) {
+                console.error('[PLAYER] HLS stream error:', error);
                 reject(error);
             }
         });
@@ -478,7 +490,10 @@ const PlayerModule = {
         
         return new Promise((resolve, reject) => {
             player.one('loadedmetadata', () => resolve());
-            player.one('error', () => reject(player.error()));
+            player.one('error', (e) => {
+                console.error('[PLAYER] DASH error:', e);
+                reject(player.error());
+            });
         });
     },
 
@@ -506,7 +521,10 @@ const PlayerModule = {
 
         return new Promise((resolve, reject) => {
             player.one('loadedmetadata', () => resolve());
-            player.one('error', () => reject(player.error()));
+            player.one('error', (e) => {
+                console.error('[PLAYER] Direct stream error:', e);
+                reject(player.error());
+            });
         });
     },
 
@@ -571,6 +589,8 @@ const PlayerModule = {
                 uniqueSources.push(source);
             }
         });
+
+        console.log('[PLAYER] Collected sources:', uniqueSources.length, uniqueSources.map(s => ({ url: s.url.substring(0, 50) + '...', label: s.label })));
 
         return uniqueSources;
     },
