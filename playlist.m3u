@@ -7,10 +7,10 @@ https://cdn-tt.pages.dev/ch1.m3u8
 https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/0/master_1500.m3u8?hdntl=Expires=1783709184~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiZDFjMTViMzYtOWQ3Ny00ZTlhLWExOTMtNDY0YjJkM2QyY2NmIn0~Signature=AWIR_5HUac_dIsEOa0nNZkjk2KqwMJsCyw8P1PUugx8NV2V1gPGYBum9dzRX9DHGC_sODtz_yN0JLL_9V-CRJWodiCAO
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/3840px-T_Sports_logo.svg.png", T Sports 
 http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV 
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnuwajhnt5zlu58nLdYxFOq88vkb23sCR-cdXhhQXKwg&s=10", Somoy TV 
 http://114.130.57.233:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
 
 
@@ -19,11 +19,11 @@ https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783284383-0-0-ba5
 
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports Direct
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LIab42PQZr9m6b09N2J3Lt6dIaAVvFnUxrzwxBM4NpkDFAj9v2XH5EA&s=10", Bein Sports Direct
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TVP Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSR3C7tn-sbN321js178JZGjOfpUMF-x3Xc_Nx6O4QitzPTHGtCu8v7lo&s=10", TVP Sports
 https://1nyaler.streamhostingcdn.top/stream/89/index.m3u8
 
 
@@ -31,30 +31,30 @@ https://1nyaler.streamhostingcdn.top/stream/89/index.m3u8
 
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox Sports - FIFA
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/1280px-FOX_Sports_logo.svg.png", Fox Sports - FIFA
 http://84.17.50.102/fox/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TYC Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/3840px-TyC_Sports_logo.svg.png", TYC Sports
 https://1nyaler.streamhostingcdn.top/stream/84/index.m3u8
 
 
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Win Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdR_7UZ6-M1HGbuC1noyWDYSx9bYL29W4wV1lFKMSTKw&s=10", Win Sports
 https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Dazn Direct
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwNWXoZkpfQWf5p9qV-E9JuDXBWzRDb8XGMsbdsqtS7Q&s=10", Dazn Direct
 https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", D Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/5/5a/DSports.png", D Sports
 https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tv Azteca
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://w1.pngwing.com/pngs/901/838/png-transparent-tv-logo-television-tv-azteca-television-channel-text-line-area.png", Tv Azteca
 https://1nyaler.streamhostingcdn.top/stream/117/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/TUDN_Logo.svg/3840px-TUDN_Logo.svg.png", Tudn Sports
 https://1nyaler.streamhostingcdn.top/stream/52/index.m3u8
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports B
+#EXTINF:-1 group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/TUDN_Logo.svg/3840px-TUDN_Logo.svg.png", Tudn Sports B
 http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/276843.ts
 
 
