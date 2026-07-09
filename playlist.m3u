@@ -6,12 +6,15 @@ https://cdn-tt.pages.dev/ch1.m3u8
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/43/Toffee_logo.png/revision/latest/scale-to-width-down/985?cb=20231207072745", Toffee S2
 https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/0/master_1500.m3u8?hdntl=Expires=1783709184~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiZDFjMTViMzYtOWQ3Ny00ZTlhLWExOTMtNDY0YjJkM2QyY2NmIn0~Signature=AWIR_5HUac_dIsEOa0nNZkjk2KqwMJsCyw8P1PUugx8NV2V1gPGYBum9dzRX9DHGC_sODtz_yN0JLL_9V-CRJWodiCAO
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Server-3
-https://prod-cdn01-live.toffeelive.com/live/FIFA-2026/sst/0/master_1500.m3u8?hdntl=Expires=1783709184~_GO=Generated~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiZDFjMTViMzYtOWQ3Ny00ZTlhLWExOTMtNDY0YjJkM2QyY2NmIn0~Signature=AWIR_5HUac_dIsEOa0nNZkjk2KqwMJsCyw8P1PUugx8NV2V1gPGYBum9dzRX9DHGC_sODtz_yN0JLL_9V-CRJWodiCAO
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://lh3.googleusercontent.com/mGk98--Wei7SRISqyPRmtGVWYIt9CcyPaQM_8JctgErASaFp91UgCHq_wubRk0SPdtft8gbkRvm1iw5NwcGYj5ftVMIFXhR4EBdY=h200", Bioscope +
-https://d1kep4defqj6r1.cloudfront.net/out/v1/4e21d5a122c549289dd6feab259266e8/index_1.m3u8
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/43/Toffee_logo.png/revision/latest/scale-to-width-down/985?cb=20231207072745", Toffee S4
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 
+http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV 
+http://114.130.57.233:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
+
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZBDQqNoxY8gOQaQiPwgP-WTxn4CIYuEu9m3HaXgtUg&s=10", SoCo Live
 https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783284383-0-0-ba541e77b9330eab42075af6aa5029e4
 
 
@@ -20,6 +23,97 @@ https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783284383-0-0-ba5
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 
 
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TVP Sports
+https://1nyaler.streamhostingcdn.top/stream/89/index.m3u8
+
+
+
+
+
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox Sports - FIFA
+http://84.17.50.102/fox/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TYC Sports
+https://1nyaler.streamhostingcdn.top/stream/84/index.m3u8
+
+
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Win Sports
+https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Dazn Direct
+https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", D Sports
+https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tv Azteca
+https://1nyaler.streamhostingcdn.top/stream/117/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports
+https://1nyaler.streamhostingcdn.top/stream/52/index.m3u8
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports B
+http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/276843.ts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Unite Sports 1 (Hindi)
+http://180.94.28.28:8097/Fifa-2026/index.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Unite Sports B
+http://fastshare1.com/live/25711345/late8airline/745202.ts
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 1
+http://fastshare1.com/live/25711345/late8airline/751354.ts
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", S Live Central A
+http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/745149.ts
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", S Live Central B
+http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745149.ts
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", PTV
+http://103.72.65.229:8422/tv.cricflixs.com/index.m3u8
+
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", 616 Sports 4K
+http://starhub.pro/live/farhat-3379/67897-913379/745270.ts
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", 616 Sports 4K B
+http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745270.ts
+
+#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A1 
+http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/130714.ts
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A2 
+http://198.195.239.50:8095/tsports/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A3
+http://198.195.239.50:8095/ptv/tracks-v1a1/mono.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 
+http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", BTV Live 
+http://103.14.151.101:11/manik-kuttar-baccha-telegram-batpar.m3u8
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", BTV B 
+http://114.130.57.233:8080/manik-kutta-moharaza-kuttar-baccha-t.me/tvserverhd/video.m3u8?token=manik-kuttar-baccha-t.me/tvserverhd
 
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV 
 http://114.130.57.233:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
@@ -36,69 +130,6 @@ https://iptv.ryvoxtb.workers.dev/live/somoytv.m3u8?token=698bb62d6919e5c22ec8be7
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV D
 https://tv.beyondtaxconsultants.com/api/robi/lps/http://116.204.149.16/somoytv/tracks-v1a1/mono.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 
-http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
-
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Unite Sports 1 (Hindi)
-http://180.94.28.28:8097/Fifa-2026/index.m3u8
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Unite Sports B
-http://fastshare1.com/live/25711345/late8airline/745202.ts
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 1
-http://fastshare1.com/live/25711345/late8airline/751354.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", S Live Central A
-http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/745149.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", S Live Central B
-http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745149.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", PTV
-http://103.72.65.229:8422/tv.cricflixs.com/index.m3u8
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TVP Sports
-https://1nyaler.streamhostingcdn.top/stream/89/index.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", 616 Sports 4K
-http://starhub.pro/live/farhat-3379/67897-913379/745270.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", 616 Sports 4K B
-http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745270.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A1 
-http://rgkkw.live:80/live/1Aoen7elp5/IgMJ60tmAa/130714.ts
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A2 
-http://198.195.239.50:8095/tsports/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", World Cup A3
-http://198.195.239.50:8095/ptv/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", T Sports 
-http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", BTV Live 
-http://103.14.151.101:11/manik-kuttar-baccha-telegram-batpar.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", BTV B 
-http://114.130.57.233:8080/manik-kutta-moharaza-kuttar-baccha-t.me/tvserverhd/video.m3u8?token=manik-kuttar-baccha-t.me/tvserverhd
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV 
-http://114.130.57.233:8080/Somoy-TV-3Mb/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV A
-http://198.195.239.50:8095/somoyTv/tracks-v1a1/mono.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV B 
-https://live.thebosstv.com:30443/dwlive/Somoy-TV/chunks.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV C 
-https://iptv.ryvoxtb.workers.dev/live/somoytv.m3u8?token=698bb62d6919e5c22ec8be7a017971f5&time=1781488364
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Somoy TV D
-https://tv.beyondtaxconsultants.com/api/robi/lps/http://116.204.149.16/somoytv/tracks-v1a1/mono.m3u8
 
 
 
@@ -107,8 +138,7 @@ https://tv.beyondtaxconsultants.com/api/robi/lps/http://116.204.149.16/somoytv/t
 
 
 
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TSN 1 WC
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TSN 1 WC
 http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/748388.ts
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TSN 1 WC B
@@ -120,13 +150,13 @@ http://fastshare1.com/live/25711345/late8airline/741567.ts
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Unite Sports B
 http://fastshare1.com/live/25711345/late8airline/745202.ts
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 1
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 1
 http://fastshare1.com/live/25711345/late8airline/751354.ts
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 2
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox 2
 http://fastshare1.com/live/25711345/late8airline/751355.ts
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports 1 HD
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports 1 HD
 http://fastshare1.com/live/25711345/late8airline/744517.ts
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports 2 HD
@@ -165,7 +195,7 @@ http://fastshare1.com/live/25711345/late8airline/744528.ts
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Test 1
 http://103.72.65.229:8422/tv.cricflixs.com/index.m3u8
 
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Bein Sports
 https://1nyaler.streamhostingcdn.top/stream/23/index.m3u8
 
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TVP Sports
@@ -237,8 +267,10 @@ http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745195.ts
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", S Live Extra
 http://fastshare1.com/live/1Aoen7elp5/IgMJ60tmAa/745211.ts
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox Sports - FIFA
-http://84.17.50.102/fox/index.m3u8
+
+
+
+
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Fox Sports 1 - FIFA
 http://41.223.30.230/FOXSPORTS1/tracks-v1a1/mono.m3u8
@@ -264,26 +296,7 @@ https://tv.beyondtaxconsultants.com/api/robi/lps/http://151.80.18.177:86/M6_HD/i
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", D Sports
 http://190.108.83.69:8000/play/a05w/72644547.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Win Sports
-https://1nyaler.streamhostingcdn.top/stream/32/index.m3u8
 
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Dazn Direct
-https://1nyaler.streamhostingcdn.top/stream/94/index.m3u8
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", D Sports
-https://1nyaler.streamhostingcdn.top/stream/106/index.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", TYC Sports
-https://1nyaler.streamhostingcdn.top/stream/84/index.m3u8
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tv Azteca
-https://1nyaler.streamhostingcdn.top/stream/117/index.m3u8
-
-#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports
-https://1nyaler.streamhostingcdn.top/stream/52/index.m3u8
-
-#EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Tudn Sports B
-http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/276843.ts
 
 #EXTINF:-1 group-title="Sports" tvg-logo="https://imglink.cc/cdn/RY7jBwPKAr.jpg", Canal 5
 http://str2.v3v3v.xyz:2082/live/rokhsi25_951396/POm6KqnW/276767.ts
