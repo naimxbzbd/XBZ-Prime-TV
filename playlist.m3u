@@ -11,6 +11,12 @@ https://live1.streambylivepulse.com/live/channel5/playlist.m3u8?wsSecret=f805d01
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/3840px-T_Sports_logo.svg.png", T Sports 
 http://114.130.57.233:8080/TsportHD/tracks-v1a1/mono.m3u8?token=SkQuhAXZxgBan1
 
+
+#EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/T_Sports_logo.svg/3840px-T_Sports_logo.svg.png", Smart Play
+https://subscribers-october-recommend-concluded.trycloudflare.com/live/mystream/index.m3u8?cookieCheck=1
+
+
+
 #EXTINF:-1 group-title="Football World Cup 2026" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-LIab42PQZr9m6b09N2J3Lt6dIaAVvFnUxrzwxBM4NpkDFAj9v2XH5EA&s=10", FIFA S-1
 https://pull.niues.live/live/stream-9912060_lhd.m3u8?auth_key=1783284383-0-0-ba541e77b9330eab42075af6aa5029e48405367020763&wsIPSercert=dcef500572ff9f5e8ac285e3595073c7
 
